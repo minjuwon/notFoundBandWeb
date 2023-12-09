@@ -1,0 +1,139 @@
+body { 
+    background-color: black;
+  }
+  
+  /* 메뉴 */
+  #logo_img:hover {background-color: olive;}
+  #logo_img{ /*하위 페이지 로고*/
+    width: 40%;
+    height: 40%;
+  }
+  
+  #member_img:hover {background-color: palevioletred;}
+  #member_img { /*하위 페이지 좌상단 고양이 1(멤버소개)*/
+    width: 7%;
+    height: 7%;  
+  }
+  
+  #pr_img:hover {background-color: rgb(68, 207, 231);}
+  #pr_img { /*하위 페이지 좌상단 고양이 2(홍보페이지)*/
+    width: 7%;
+    height: 7%;  
+  }
+  
+  #goods_img:hover {background-color: rgb(150, 87, 212);}
+  #goods_img { /*하위 페이지 우상단 고양이 1(굿즈샵) */
+    width: 7%;
+    height: 7%;
+  }
+  
+  #plan_img:hover {background-color: gold;}
+  #plan_img { /*하위 페이지 우상단 고양이 2(공연일정)*/
+    width: 7%;
+    height: 7%;
+  }
+  
+  #menu {
+    text-align: center;
+    background-color: black;
+  }
+  
+  #menu > div {
+    display: inline;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+  
+  
+  /* 멤버 소개글 */
+  h2 {color: white;}
+  
+  #member_introduction_wrapper {
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #member_introduction_wrapper > div {
+    position: absolute;
+    margin-bottom: 50vh;
+  }
+  
+  #member_introduction_wrapper > img:hover ~ #member_introduction{opacity: 0;}
+  #member_introduction {
+    opacity: 1;
+  }
+  
+  #guitar_img:hover ~ #guitar_introduction {opacity: 1;}
+  #guitar_introduction {
+    opacity: 0;
+  }
+  
+  #vocal_img:hover ~ #vocal_introduction {opacity: 1;}
+  #vocal_introduction {
+    opacity: 0;
+  }
+  
+  #drum_img:hover ~ #drum_introduction {opacity: 1;}
+  #drum_introduction {
+    opacity: 0;
+  }
+  
+  #bass_img:hover ~ #bass_introduction {opacity: 1;}
+  #bass_introduction {
+    opacity: 0;
+  }
+  
+  /* 멤버 이미지 */
+  #member_introduction_wrapper > img:hover {filter: grayscale(0%);}
+  #member_introduction_wrapper > img {
+    filter: grayscale(80%) brightness(50%);
+    position: relative;
+    z-index: 2;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  #guitar_img {
+    width: 15%;
+    height: 15%;
+  }
+  
+  #vocal_img {
+    width: 15%;
+    height: 15%;
+    
+    top: 5vh;
+  }
+  
+  #drum_img {
+    width: 20%;
+    height: 20%;
+  
+    bottom: 2vh;
+  }
+  
+  #bass_img {
+    width: 20%;
+    height: 20%;
+  
+    top: 5vh;
+    left: 1vw;
+  }
+  
+  #stage {
+    background: rgb(44, 44, 44);
+    width: 90vw;
+    height: 30vh;
+    border-radius: 50%;
+    bottom: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+    top: 20vh;
+  }

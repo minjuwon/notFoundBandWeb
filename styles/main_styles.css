@@ -1,0 +1,82 @@
+body { 
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2.5rem;
+  font-weight:bold;
+  color: #fff;
+  font-family: 'Permanent Marker', cursive;
+}
+.flow-text:hover {
+  color: #9D9993;
+}
+.flow-text:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.flow-wrap {
+  animation: textLoop 10s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.centered-content {
+    text-align: center;
+    margin: 160px 0;
+}
+
+.cats-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logo_img {
+    width: 50%;
+    max-height: 50vh;
+}
+#member_img:hover { background-color: palevioletred; }
+#member_img {
+    max-height: 15vh;
+}
+#pr_img:hover { background-color: rgb(68, 207, 231); }
+#pr_img {
+    max-height: 15vh;
+}
+#goods_img:hover { background-color: rgb(150, 87, 212); }
+#goods_img {
+    max-height: 15vh; 
+}
+#plan_img:hover { background-color: gold; }
+#plan_img {
+    max-height: 15vh; 
+}
+.image-wrap {
+    text-align: center;
+    margin:100px 80px;
+}
+.caption {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #64615c;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgb(220, 220, 220);
+}

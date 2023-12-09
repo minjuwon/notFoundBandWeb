@@ -1,0 +1,77 @@
+body { 
+  background-color: black;
+}
+
+
+#logo_img:hover {background-color: olive;}
+#logo_img{ /*하위 페이지 로고*/
+  width: 40%;
+  height: 40%;
+}
+
+#member_img:hover {background-color: palevioletred;}
+#member_img { /*하위 페이지 좌상단 고양이 1(인화, 멤버소개)*/
+  width: 7%;
+  height: 7%;  
+}
+
+#pr_img:hover {background-color: rgb(68, 207, 231);}
+#pr_img { /*하위 페이지 좌상단 고양이 2(지니, 홍보페이지)*/
+  width: 7%;
+  height: 7%;  
+}
+
+#goods_img:hover {background-color: rgb(150, 87, 212);}
+#goods_img { /*하위 페이지 우상단 고양이 1(굿즈샵, 갈색) */
+  width: 7%;
+  height: 7%;
+}
+
+#plan_img:hover {background-color: gold;}
+#plan_img { /*하위 페이지 우상단 고양이 2(주원, 공연일정)*/
+  width: 7%;
+  height: 7%;
+}
+
+#menu {
+  text-align: center;
+}
+
+#menu > div {
+  display: inline;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.pr_video{
+  color: white;
+  font-family: Georgia;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.video {
+  flex: none;
+  scroll-snap-align: start;
+  width: 100%;
+}
+
+.video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.info_scroll{
+  color: white;
+  text-align: center;
+}
